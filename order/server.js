@@ -16,7 +16,7 @@ const orders = [
         price : 360
     }        
 ]
-app.get("/order",(req,res)=>{
+app.get("/order-list",(req,res)=>{
     let response = {
         data :{
             items : orders
@@ -25,7 +25,7 @@ app.get("/order",(req,res)=>{
     res.json(response);
 })
 
-app.get("/order/:id",(req,res)=>{
+app.get("/:id",(req,res)=>{
     
     let orderId  = req.params && req.params.id ? req.params.id : 0;
     let order;
