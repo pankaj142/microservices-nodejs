@@ -1,0 +1,14 @@
+{
+  "name": "order",
+  "version": "1.0.0",
+  "description": "This is order microservice",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "author": "pankaj agham",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
