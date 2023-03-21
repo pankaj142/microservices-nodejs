@@ -16,7 +16,7 @@ const payments = [
         price : 360
     }        
 ]
-app.get("/payment",(req,res)=>{
+app.get("/payment-list",(req,res)=>{
     let response = {
         data :{
             items : payments
@@ -25,7 +25,7 @@ app.get("/payment",(req,res)=>{
     res.json(response);
 })
 
-app.get("/payment/:id",(req,res)=>{
+app.get("/:id",(req,res)=>{
     
     let paymentId  = req.params && req.params.id ? req.params.id : 0;
     let payment;
