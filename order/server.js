@@ -41,6 +41,10 @@ app.get("/order/:id",(req,res)=>{
     });
 })
 
+app.get("/", (req,res)=>{
+    res.status(200).json({message : "Order called"})
+})
+
 app.listen(port, ()=>{
     console.log(`Order Microservice is running on ${port}`)
 })
